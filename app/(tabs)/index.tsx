@@ -3,7 +3,7 @@ import React from "react";
 
 const app = () => {
   return (
-    <View>
+    <View style={styles.container}>
       <Text style={styles.text}>Coffee Shop</Text>
     </View>
   );
