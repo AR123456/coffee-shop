@@ -1,10 +1,16 @@
-import { View, Text, StyleSheet } from "react-native";
+import { View, Text, StyleSheet, ImageBackground } from "react-native";
 import React from "react";
-
+const myImage = require("../../assets/images/coffee-splash.png");
 const app = () => {
   return (
     <View style={styles.container}>
-      <Text style={styles.text}>Coffee Shop</Text>
+      <ImageBackground
+        source={myImage}
+        resizeMode="cover"
+        style={styles.backgroundImage}
+      >
+        <Text style={styles.text}>Coffee Shop</Text>
+      </ImageBackground>
     </View>
   );
 };
@@ -21,5 +27,10 @@ const styles = StyleSheet.create({
     fontSize: 42,
     fontWeight: "bold",
     textAlign: "center",
+  },
+  backgroundImage: {
+    flex: 1,
+    justifyContent: "center",
+    alignItems: "center",
   },
 });
