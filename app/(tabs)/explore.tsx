@@ -17,7 +17,7 @@ export default function TabTwoScreen() {
         <IconSymbol
           size={310}
           color="#808080"
-          name="house.fill"
+          name="coffee-maker.fill"
           style={styles.headerImage}
         />
       }
