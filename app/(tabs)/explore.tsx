@@ -32,23 +32,21 @@ export default function TabTwoScreen() {
           Annes Coffee Shop
         </ThemedText>
       </ThemedView>
-      <ThemedText>
-        This app includes example code to help you get started.
-      </ThemedText>
-      <Collapsible title="File-based routing">
+      <ThemedText>We offer the best coffee west of the White river</ThemedText>
+      <Collapsible title="Address">
         <ThemedText>
-          This app has two screens:{" "}
-          <ThemedText type="defaultSemiBold">app/(tabs)/index.tsx</ThemedText>{" "}
+          25 Main Street:{" "}
+          {/* <ThemedText type="defaultSemiBold">app/(tabs)/index.tsx</ThemedText>{" "}
           and{" "}
-          <ThemedText type="defaultSemiBold">app/(tabs)/explore.tsx</ThemedText>
+          <ThemedText type="defaultSemiBold">app/(tabs)/explore.tsx</ThemedText> */}
         </ThemedText>
         <ThemedText>
-          The layout file in{" "}
-          <ThemedText type="defaultSemiBold">app/(tabs)/_layout.tsx</ThemedText>{" "}
-          sets up the tab navigator.
+          HomeTown,IN 46073{" "}
+          {/* <ThemedText type="defaultSemiBold">app/(tabs)/_layout.tsx</ThemedText>{" "}
+          sets up the tab navigator. */}
         </ThemedText>
         <ExternalLink href="https://docs.expo.dev/router/introduction">
-          <ThemedText type="link">Learn more</ThemedText>
+          <ThemedText type="link">Open Map</ThemedText>
         </ExternalLink>
       </Collapsible>
       <Collapsible title="Android, iOS, and web support">
