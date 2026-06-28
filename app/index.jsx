@@ -8,6 +8,7 @@ const app = () => {
     <View style={styles.container}>
       <ImageBackground source={icedCoffeeImg} style={styles.image}>
         <Text style={styles.text}>Coffee Shop</Text>
+        <Link href="/explore">Explore</Link>
       </ImageBackground>
     </View>
   );
