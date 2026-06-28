@@ -7,7 +7,7 @@ const app = () => {
   return (
     <View style={styles.container}>
       <ImageBackground source={icedCoffeeImg} style={styles.image}>
-        <Text style={styles.text}>Coffee Shop</Text>
+        <Text style={styles.title}>Coffee Shop</Text>
         <Link style={styles.link} href="/explore">
           Explore
         </Link>
@@ -23,7 +23,7 @@ const styles = StyleSheet.create({
     flex: 1,
     flexDirection: "column",
   },
-  text: {
+  title: {
     color: "white",
     fontSize: 42,
     fontWeight: "bold",
