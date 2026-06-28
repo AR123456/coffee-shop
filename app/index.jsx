@@ -8,7 +8,9 @@ const app = () => {
     <View style={styles.container}>
       <ImageBackground source={icedCoffeeImg} style={styles.image}>
         <Text style={styles.text}>Coffee Shop</Text>
-        <Link href="/explore">Explore</Link>
+        <Link style={styles.link} href="/explore">
+          Explore
+        </Link>
       </ImageBackground>
     </View>
   );
@@ -26,6 +28,17 @@ const styles = StyleSheet.create({
     fontSize: 42,
     fontWeight: "bold",
     textAlign: "center",
+    backgroundColor: "rgba(0,0,0,0.5)",
+    marginBottom: 120,
+  },
+  link: {
+    color: "white",
+    fontSize: 42,
+    fontWeight: "bold",
+    textAlign: "center",
+    textDecorationLine: "underline",
+    padding: 4,
+
     backgroundColor: "rgba(0,0,0,0.5)",
   },
   image: {
