@@ -1,4 +1,10 @@
-import { View, Text, StyleSheet, ImageBackground } from "react-native";
+import {
+  View,
+  Text,
+  StyleSheet,
+  ImageBackground,
+  Pressable,
+} from "react-native";
 import { Link } from "expo-router";
 
 import icedCoffeeImg from "@/assets/images/iced-coffee.png";
@@ -8,8 +14,10 @@ const app = () => {
     <View style={styles.container}>
       <ImageBackground source={icedCoffeeImg} style={styles.image}>
         <Text style={styles.title}>Coffee Shop</Text>
-        <Link style={styles.link} href="/explore">
-          Explore
+        <Link href="/explore" style={{ marginHorizontal: "auto" }} aschild>
+          <Pressable>
+            <Text> Explore</Text>
+          </Pressable>
         </Link>
       </ImageBackground>
     </View>
