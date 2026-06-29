@@ -15,8 +15,8 @@ const app = () => {
       <ImageBackground source={icedCoffeeImg} style={styles.image}>
         <Text style={styles.title}>Coffee Shop</Text>
         <Link href="/explore" style={{ marginHorizontal: "auto" }} aschild>
-          <Pressable>
-            <Text> Explore</Text>
+          <Pressable style={styles.button}>
+            <Text style={styles.buttonText}> Explore</Text>
           </Pressable>
         </Link>
       </ImageBackground>
@@ -46,12 +46,12 @@ const styles = StyleSheet.create({
     textAlign: "center",
     textDecorationLine: "underline",
     padding: 4,
-
     backgroundColor: "rgba(0,0,0,0.5)",
   },
   button: {
     height: 60,
     borderRadius: 20,
+    justifyContent: "center",
     backgroundColor: "rgba(0,0,0,0.75)",
     padding: 6,
   },
