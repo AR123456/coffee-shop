@@ -49,6 +49,23 @@ const styles = StyleSheet.create({
 
     backgroundColor: "rgba(0,0,0,0.5)",
   },
+  button: {
+    color: "white",
+    fontSize: 42,
+    fontWeight: "bold",
+    textAlign: "center",
+    textDecorationLine: "underline",
+    padding: 4,
+
+    backgroundColor: "rgba(0,0,0,0.5)",
+  },
+  buttonText: {
+    color: "white",
+    fontSize: 16,
+    fontWeight: "bold",
+    textAlign: "center",
+    padding: 4,
+  },
   image: {
     flex: 1,
     justifyContent: "center",
