@@ -50,14 +50,10 @@ const styles = StyleSheet.create({
     backgroundColor: "rgba(0,0,0,0.5)",
   },
   button: {
-    color: "white",
-    fontSize: 42,
-    fontWeight: "bold",
-    textAlign: "center",
-    textDecorationLine: "underline",
-    padding: 4,
-
-    backgroundColor: "rgba(0,0,0,0.5)",
+    height: 60,
+    borderRadius: 20,
+    backgroundColor: "rgba(0,0,0,0.75)",
+    padding: 6,
   },
   buttonText: {
     color: "white",
