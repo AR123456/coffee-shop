@@ -25,6 +25,7 @@ export default function RootLayout() {
           options={{ title: "Home", headerShown: false }}
         />
         <Stack.Screen name="contact" options={{ title: "Contact Me" }} />
+        <Stack.Screen name="+not-found" />
         <Stack.Screen
           name="modal"
           options={{ presentation: "modal", title: "Modal" }}
