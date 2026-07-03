@@ -32,8 +32,12 @@ export default function TabLayout() {
         name="contact"
         options={{
           title: "Contact Us",
-          tabBarIcon: ({ color }) => (
-            <IconSymbol size={28} name="paperplane.fill" color={color} />
+          tabBarIcon: ({ color, focused }) => (
+            <TabBarIcon
+              name={focused ? "people-circle" : "people-circle-outline"}
+              size={28}
+              color={color}
+            />
           ),
         }}
       />
