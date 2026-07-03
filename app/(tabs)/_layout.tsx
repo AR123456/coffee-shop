@@ -14,7 +14,7 @@ export default function TabLayout() {
       screenOptions={{
         tabBarActiveTintColor: Colors[colorScheme ?? "light"].tint,
         tabBarInactiveTintColor: Colors[colorScheme ?? "light"].tint,
-        headerShown: true,
+        headerShown: false,
         tabBarButton: HapticTab,
       }}
     >
@@ -30,7 +30,7 @@ export default function TabLayout() {
       <Tabs.Screen
         name="contact"
         options={{
-          title: "Contact",
+          title: "Contact Us",
           tabBarIcon: ({ color }) => (
             <IconSymbol size={28} name="paperplane.fill" color={color} />
           ),
