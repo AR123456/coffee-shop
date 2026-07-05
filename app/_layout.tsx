@@ -5,9 +5,9 @@ import { useEffect } from "react";
 // to determine light or dark color scheme
 import { Appearance } from "react-native";
 import { Colors } from "@/constants/Colors";
-export const unstable_settings = {
-  anchor: "(tabs)",
-};
+
+// Prevent the splash screen from auto-hiding before asset loading is complete.
+SplashScreen.preventAutoHideAsync();
 
 export default function RootLayout() {
   const colorScheme = useColorScheme();
