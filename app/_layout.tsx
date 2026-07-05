@@ -10,7 +10,8 @@ import { Colors } from "@/constants/Colors";
 SplashScreen.preventAutoHideAsync();
 
 export default function RootLayout() {
-  const colorScheme = useColorScheme();
+  // use color based on user pref
+  const colorScheme = Appearance.getColorScheme();
 
   return (
     <Stack>
