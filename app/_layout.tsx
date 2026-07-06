@@ -34,7 +34,6 @@ export default function RootLayout() {
         headerShadowVisible: false,
       }}
     >
-      {/* <Stack.Screen name="(tabs)" options={{ headerShown: false }} /> */}
       <Stack.Screen
         name="index"
         options={{ headerShown: false, title: "Home" }}
@@ -45,6 +44,14 @@ export default function RootLayout() {
           headerShown: true,
           title: "Contact",
           headerTitle: "Contact Us",
+        }}
+      />
+      <Stack.Screen
+        name="menu"
+        options={{
+          headerShown: true,
+          title: "Menu",
+          headerTitle: "Coffee Shop Menu",
         }}
       />
 
