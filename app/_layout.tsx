@@ -41,10 +41,14 @@ export default function RootLayout() {
       />
       <Stack.Screen
         name="contact"
-        options={{ headerShown: false, title: "Contact" }}
+        options={{
+          headerShown: true,
+          title: "Contact",
+          headerTitle: "Contact Us",
+        }}
       />
 
-      <Stack.Screen name="+not-found" />
+      <Stack.Screen name="+not-found" options={{ headerShown: false }} />
     </Stack>
   );
 }
