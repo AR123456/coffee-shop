@@ -7,7 +7,7 @@ import { ThemedText } from "@/components/themed-text";
 import { ThemedView } from "@/components/themed-view";
 import { IconSymbol } from "@/components/ui/icon-symbol";
 import { Fonts } from "@/constants/theme";
-import { Link } from "expo-router";
+
 export default function TabTwoScreen() {
   return (
     <ParallaxScrollView
@@ -53,7 +53,7 @@ export default function TabTwoScreen() {
           {/* You can open this project on Android, iOS, and the web. To open the
           web version, press <ThemedText type="defaultSemiBold">w</ThemedText>{" "}
           in the terminal running this project. */}
-          <Link href="/menu">We offer all kinds of coffee and pastries</Link>
+          We offer all kinds of coffee and pastries
         </ThemedText>
       </Collapsible>
       <Collapsible title="Reviews">
