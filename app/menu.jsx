@@ -4,6 +4,10 @@ import { Colors } from "@/constants/Colors";
 export default function MenuScreen() {
   const colorScheme = Appearance.getColorScheme();
   const theme = colorScheme === "dark" ? Colors.dark : Colors.light;
+  // styles function
+  const styles = createStyles(theme, colorScheme);
 }
 
-const styles = StyleSheet.create({});
+function createStyles(theme, colorScheme) {
+  return StyleSheet.create({});
+}
