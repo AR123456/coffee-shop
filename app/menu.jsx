@@ -17,7 +17,7 @@ export default function MenuScreen() {
   const Container = Platform.OS === "web" ? ScrollView : SafeAreaView;
   return (
     <Container>
-      <FlatList></FlatList>
+      <FlatList data={[]} renderItem={({item})=>()}></FlatList>
     </Container>
   );
 }
