@@ -4,7 +4,7 @@ import {
   Platform,
   SafeAreaView,
   FlatList,
-  ScrollView,
+  ScrollView,View,Text,Image
 } from "react-native";
 import { Colors } from "@/constants/Colors";
 
