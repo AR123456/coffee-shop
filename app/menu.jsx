@@ -20,7 +20,10 @@ export default function MenuScreen() {
   return (
     <Container>
    
-      <FlatList data={MENU_ITEMS} renderItem={({item})=>()}></FlatList>
+      <FlatList data={MENU_ITEMS}
+      // need a key for map
+      keyExtractor={(item)=> item.id.toString()}
+      renderItem={({item})=>()}></FlatList>
     </Container>
   );
 }
