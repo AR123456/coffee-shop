@@ -25,6 +25,7 @@ export default function MenuScreen() {
       <FlatList
         data={MENU_ITEMS}
         keyExtractor={(item) => item.id.toString()}
+        showsVerticalScrollIndicator={false}
         renderItem={({ item }) => (
           <View>
             <View>
