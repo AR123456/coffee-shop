@@ -26,6 +26,8 @@ export default function MenuScreen() {
         data={MENU_ITEMS}
         keyExtractor={(item) => item.id.toString()}
         showsVerticalScrollIndicator={false}
+        // style the parent container in this case Container
+        contentContainerStyle={}
         renderItem={({ item }) => (
           <View>
             <View>
