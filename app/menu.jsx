@@ -16,9 +16,9 @@ import MENU_IMAGES from "@/constants/MenuImages";
 export default function MenuScreen() {
   const colorScheme = Appearance.getColorScheme();
   const theme = colorScheme === "dark" ? Colors.dark : Colors.light;
-  // styles function
+
   const styles = createStyles(theme, colorScheme);
-  // define containter for app web vs mobile to render flat list -need imports
+  // container for app web vs mobile to render flat list
   const Container = Platform.OS === "web" ? ScrollView : SafeAreaView;
   return (
     <Container>
@@ -28,10 +28,10 @@ export default function MenuScreen() {
         renderItem={({ item }) => (
           <View>
             <View>
-              <Text></Text>
-              <Text></Text>
+              <Text>{item.title}</Text>
+              <Text>{item.description}</Text>
             </View>
-            <Image source={MENU_IMAGES[item.id - 1]}></Image>
+            <Image source={MENU_IMAGES[item.id - 1]} />
           </View>
         )}
       ></FlatList>
