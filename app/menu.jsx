@@ -31,7 +31,7 @@ export default function MenuScreen() {
               <Text></Text>
               <Text></Text>
             </View>
-            <Image></Image>
+            <Image source={MENU_IMAGES[item.id - 1]}></Image>
           </View>
         )}
       ></FlatList>
