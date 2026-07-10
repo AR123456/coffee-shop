@@ -4,10 +4,13 @@ import {
   Platform,
   SafeAreaView,
   FlatList,
-  ScrollView,View,Text,Image
+  ScrollView,
+  View,
+  Text,
+  Image,
 } from "react-native";
 import { Colors } from "@/constants/Colors";
-import {MENU_ITEMS} from "@/constants/MenuItems";
+import { MENU_ITEMS } from "@/constants/MenuItems";
 import MENU_IMAGES from "@/constants/MenuImages";
 
 export default function MenuScreen() {
@@ -19,11 +22,19 @@ export default function MenuScreen() {
   const Container = Platform.OS === "web" ? ScrollView : SafeAreaView;
   return (
     <Container>
-   
-      <FlatList data={MENU_ITEMS}
-      // need a key for map
-      keyExtractor={(item)=> item.id.toString()}
-      renderItem={({item})=>()}></FlatList>
+      <FlatList
+        data={MENU_ITEMS}
+        keyExtractor={(item) => item.id.toString()}
+        renderItem={({ item }) => (
+          <View>
+            <View>
+              <Text></Text>
+              <Text></Text>
+            </View>
+            <Image></Image>
+          </View>
+        )}
+      ></FlatList>
     </Container>
   );
 }
