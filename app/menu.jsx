@@ -27,7 +27,7 @@ export default function MenuScreen() {
         keyExtractor={(item) => item.id.toString()}
         showsVerticalScrollIndicator={false}
         // style the parent container in this case Container
-        contentContainerStyle={}
+        contentContainerStyle={styles.contentContainer}
         renderItem={({ item }) => (
           <View>
             <View>
@@ -43,5 +43,12 @@ export default function MenuScreen() {
 }
 
 function createStyles(theme, colorScheme) {
-  return StyleSheet.create({});
+  return StyleSheet.create({
+    contentContainer: {
+      paddingTop: 10,
+      paddingBottom: 20,
+      paddingHorizontal: 12,
+      backgroundColor: theme.background,
+    },
+  });
 }
