@@ -22,8 +22,8 @@ export default function MenuScreen() {
   const Container = Platform.OS === "web" ? ScrollView : SafeAreaView;
   // can style this view here and or in the flatlist itself
   const separatorComp = <View style={styles.separator} />;
-  const headerComp=<Text>Top of List</Text>
-  const footerComp=<Text>Bottom of List</Text>
+  const headerComp = <Text>Top of List</Text>;
+  const footerComp = <Text>Bottom of List</Text>;
   return (
     <Container>
       <FlatList
@@ -35,7 +35,7 @@ export default function MenuScreen() {
         // can also do header and footers
         ListHeaderComponent={headerComp}
         ListFooterComponent={footerComp}
-        ListFooterComponentStyle={}
+        ListFooterComponentStyle={styles.footerComp}
         renderItem={({ item }) => (
           <View>
             <View>
@@ -65,6 +65,9 @@ function createStyles(theme, colorScheme) {
       maxWidth: 300,
       marginHorizontal: "auto",
       marginBottom: 10,
+    },
+    footerComp: {
+      marginHorizontal: "auto",
     },
   });
 }
