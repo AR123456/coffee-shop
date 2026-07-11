@@ -53,5 +53,13 @@ function createStyles(theme, colorScheme) {
       paddingHorizontal: 12,
       backgroundColor: theme.background,
     },
+    separator: {
+      height: 1,
+      backgroundColor: colorScheme === "dark" ? "papayawhip" : "#000",
+      width: "50%",
+      maxWidth: 300,
+      marginHorizontal: "auto",
+      marginBottom: 10,
+    },
   });
 }
