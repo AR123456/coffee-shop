@@ -22,6 +22,8 @@ export default function MenuScreen() {
   const Container = Platform.OS === "web" ? ScrollView : SafeAreaView;
   // can style this view here and or in the flatlist itself
   const separatorComp = <View style={styles.separator} />;
+  const headerComp=<Text>Top of List</Text>
+  const footerComp=<Text>Bottom of List</Text>
   return (
     <Container>
       <FlatList
