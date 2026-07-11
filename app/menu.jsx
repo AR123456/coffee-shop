@@ -20,14 +20,17 @@ export default function MenuScreen() {
   const styles = createStyles(theme, colorScheme);
   // container for app web vs mobile to render flat list
   const Container = Platform.OS === "web" ? ScrollView : SafeAreaView;
+  // can style this view here and or in the flatlist itself
+  const separatorComp = <View style={styles.separator} />;
   return (
     <Container>
       <FlatList
         data={MENU_ITEMS}
         keyExtractor={(item) => item.id.toString()}
         showsVerticalScrollIndicator={false}
-        // style the parent container in this case Container
         contentContainerStyle={styles.contentContainer}
+        //  separator using a component
+        ItemSeparatorComponent={separatorComp}
         renderItem={({ item }) => (
           <View>
             <View>
