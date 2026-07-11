@@ -33,8 +33,8 @@ export default function MenuScreen() {
         contentContainerStyle={styles.contentContainer}
         ItemSeparatorComponent={separatorComp}
         // can also do header and footers
-        ListHeaderComponent={}
-        ListFooterComponent={}
+        ListHeaderComponent={headerComp}
+        ListFooterComponent={footerComp}
         ListFooterComponentStyle={}
         renderItem={({ item }) => (
           <View>
