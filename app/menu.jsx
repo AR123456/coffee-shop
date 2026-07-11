@@ -29,8 +29,11 @@ export default function MenuScreen() {
         keyExtractor={(item) => item.id.toString()}
         showsVerticalScrollIndicator={false}
         contentContainerStyle={styles.contentContainer}
-        //  separator using a component
         ItemSeparatorComponent={separatorComp}
+        // can also do header and footers
+        ListHeaderComponent={}
+        ListFooterComponent={}
+        ListFooterComponentStyle={}
         renderItem={({ item }) => (
           <View>
             <View>
