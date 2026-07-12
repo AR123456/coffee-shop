@@ -27,7 +27,8 @@ export default function MenuScreen() {
   return (
     <Container>
       <FlatList
-        data={MENU_ITEMS}
+        // data={MENU_ITEMS}
+        data={[]}
         keyExtractor={(item) => item.id.toString()}
         showsVerticalScrollIndicator={false}
         contentContainerStyle={styles.contentContainer}
