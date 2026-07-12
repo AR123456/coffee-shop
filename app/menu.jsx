@@ -27,17 +27,13 @@ export default function MenuScreen() {
   return (
     <Container>
       <FlatList
-        // data={MENU_ITEMS}
-        data={[]}
+        data={MENU_ITEMS}
         keyExtractor={(item) => item.id.toString()}
         showsVerticalScrollIndicator={false}
         contentContainerStyle={styles.contentContainer}
         ItemSeparatorComponent={separatorComp}
-        // can also do header and footers
-        // ListHeaderComponent={headerComp}
         ListFooterComponent={footerComp}
         ListFooterComponentStyle={styles.footerComp}
-        // note instead of using a const can put it right into curly braces
         ListEmptyComponent={<Text>No items</Text>}
         renderItem={({ item }) => (
           <View>
