@@ -36,7 +36,8 @@ export default function MenuScreen() {
         ListFooterComponentStyle={styles.footerComp}
         ListEmptyComponent={<Text>No items</Text>}
         renderItem={({ item }) => (
-          <View>
+          // the parent view in render is a row so styling as such
+          <View style={styles.row}>
             <View>
               <Text>{item.title}</Text>
               <Text>{item.description}</Text>
