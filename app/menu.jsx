@@ -38,7 +38,7 @@ export default function MenuScreen() {
         renderItem={({ item }) => (
           // the parent view in render is a row so styling as such
           <View style={styles.row}>
-            <View>
+            <View style={styles.menuTextRow}>
               <Text>{item.title}</Text>
               <Text>{item.description}</Text>
             </View>
