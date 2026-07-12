@@ -36,6 +36,8 @@ export default function MenuScreen() {
         // ListHeaderComponent={headerComp}
         ListFooterComponent={footerComp}
         ListFooterComponentStyle={styles.footerComp}
+        // note instead of using a const can put it right into curly braces
+        ListEmptyComponent={<Text>No items</Text>}
         renderItem={({ item }) => (
           <View>
             <View>
