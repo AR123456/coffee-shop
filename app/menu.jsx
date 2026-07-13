@@ -85,7 +85,11 @@ function createStyles(theme, colorScheme) {
       marginHorizontal: "auto",
     },
     menuTextRow: {
-      backgroundColor: "red",
+      width: "65%",
+      paddingTop: 10,
+      paddingLeft: 10,
+      paddingRight: 5,
+      flexGrow: 1,
     },
     menuItemTitle: {
       backgroundColor: "blue",
