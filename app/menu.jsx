@@ -79,6 +79,10 @@ function createStyles(theme, colorScheme) {
       marginBottom: 10,
       borderStyle: "solid",
       borderColor: colorScheme === "dark" ? "papayawhip" : "#000",
+      borderWidth: 1,
+      borderRadius: 20,
+      overflow: "hidden",
+      marginHorizontal: "auto",
     },
     menuTextRow: {
       backgroundColor: "red",
