@@ -71,6 +71,15 @@ function createStyles(theme, colorScheme) {
     footerComp: {
       marginHorizontal: "auto",
     },
+    row: {
+      flexDirection: "row",
+      width: "100%",
+      maxWidth: 600,
+      height: 100,
+      marginBottom: 10,
+      borderStyle: "solid",
+      borderColor: colorScheme === "dark" ? "papayawhip" : "#000",
+    },
     menuTextRow: {
       backgroundColor: "red",
     },
