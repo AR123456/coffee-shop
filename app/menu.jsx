@@ -40,7 +40,7 @@ export default function MenuScreen() {
           <View style={styles.row}>
             <View style={styles.menuTextRow}>
               <Text>{item.title}</Text>
-              <Text>{item.description}</Text>
+              <Text style={styles.menuItemText}>{item.description}</Text>
             </View>
             <Image source={MENU_IMAGES[item.id - 1]} />
           </View>
