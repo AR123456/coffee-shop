@@ -23,7 +23,7 @@ export default function MenuScreen() {
   // can style this view here and or in the flatlist itself
   const separatorComp = <View style={styles.separator} />;
   // const headerComp = <Text>Top of List</Text>;
-  const footerComp = <Text>End of Menu</Text>;
+  const footerComp = <Text style={{ color: theme.text }}>End of Menu</Text>;
   return (
     <Container>
       <FlatList
