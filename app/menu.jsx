@@ -92,7 +92,8 @@ function createStyles(theme, colorScheme) {
       flexGrow: 1,
     },
     menuItemTitle: {
-      backgroundColor: "blue",
+      fontSize: 18,
+      textDecorationLine: "underline",
     },
     menuItemText: {
       backgroundColor: "green",
