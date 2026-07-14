@@ -19,6 +19,11 @@ const app = () => {
             <Text style={styles.buttonText}>Contact Us</Text>
           </Pressable>
         </Link>
+        <Link href="/menu" asChild>
+          <Pressable>
+            <Text>Menu</Text>
+          </Pressable>
+        </Link>
       </ImageBackground>
     </View>
   );

@@ -1,4 +1,4 @@
-import { StyleSheet } from "react-native";
+import { StyleSheet, Pressable, Text } from "react-native";
 
 import { Collapsible } from "@/components/ui/collapsible";
 import { ExternalLink } from "@/components/external-link";
@@ -7,7 +7,7 @@ import { ThemedText } from "@/components/themed-text";
 import { ThemedView } from "@/components/themed-view";
 import { IconSymbol } from "@/components/ui/icon-symbol";
 import { Fonts } from "@/constants/theme";
-
+import { Link } from "expo-router";
 export default function TabTwoScreen() {
   return (
     <ParallaxScrollView
@@ -55,6 +55,11 @@ export default function TabTwoScreen() {
           in the terminal running this project. */}
           We offer all kinds of coffee and pastries
         </ThemedText>
+        {/* <Link href="/menu" asChild>
+          <Pressable>
+            <Text>Menu</Text>
+          </Pressable>
+        </Link> */}
       </Collapsible>
       <Collapsible title="Reviews">
         <ThemedText>
