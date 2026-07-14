@@ -98,5 +98,12 @@ function createStyles(theme, colorScheme) {
     menuItemText: {
       color: theme.text,
     },
+    menuImage: {
+      display: "flex",
+      justifyContent: "center",
+      alignItems: "center",
+      height: "100vh",
+      objectFit: "contain",
+    },
   });
 }
