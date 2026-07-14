@@ -96,7 +96,7 @@ function createStyles(theme, colorScheme) {
       textDecorationLine: "underline",
     },
     menuItemText: {
-      backgroundColor: "green",
+      color: theme.text,
     },
   });
 }
