@@ -55,11 +55,11 @@ export default function TabTwoScreen() {
           in the terminal running this project. */}
           We offer all kinds of coffee and pastries
         </ThemedText>
-        {/* <Link href="/menu" asChild>
+        <Link href="/menu" asChild>
           <Pressable>
             <Text>Menu</Text>
           </Pressable>
-        </Link> */}
+        </Link>
       </Collapsible>
       <Collapsible title="Reviews">
         <ThemedText>
