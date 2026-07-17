@@ -9,7 +9,10 @@ import { IconSymbol } from "@/components/ui/icon-symbol";
 import { Fonts } from "@/constants/theme";
 import { Link } from "expo-router";
 // trying to open google maps - need linking and platform
-
+const openMaps = () => {
+  const address = "123 Main St, Anytown, USA";
+  const encodedAddress = encodeURIComponent(address);
+};
 export default function TabTwoScreen() {
   return (
     <ParallaxScrollView
