@@ -12,6 +12,11 @@ import { Link } from "expo-router";
 const openMaps = () => {
   const address = "123 Main St, Anytown, USA";
   const encodedAddress = encodeURIComponent(address);
+  // check platform
+  const url = Platform.select({
+    ios: `maps:0,0?q=${encodedAddress}`,
+    android: `geo:0,0?q=${encodedAddress}`,
+  });
 };
 export default function TabTwoScreen() {
   return (
