@@ -17,6 +17,13 @@ const openMaps = () => {
     ios: `maps:0,0?q=${encodedAddress}`,
     android: `geo:0,0?q=${encodedAddress}`,
   });
+  Linking.openURL(url).catch(() => {
+    //
+    // Fallback to Google Maps web URL if no maps app is available
+    Linking.openURL(
+      `https://www.google.com/maps/search/?api=1&query=${encodedAddress}`,
+    );
+  });
 };
 export default function TabTwoScreen() {
   return (
