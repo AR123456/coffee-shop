@@ -74,7 +74,7 @@ export default function TabTwoScreen() {
         <ThemedText>We offer all kinds of coffee and pastries</ThemedText>
         <Link href="/menu" asChild>
           <Pressable>
-            <Text>Menu</Text>
+            <Text style={styles.link}>Menu</Text>
           </Pressable>
         </Link>
       </Collapsible>
