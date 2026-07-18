@@ -51,7 +51,7 @@ export default function TabTwoScreen() {
       <ThemedText>We offer the best coffee west of the White river</ThemedText>
       {/* add phone number that opens phone app  */}
       <Collapsible title="Address">
-        <Text style={styles.text}>
+        <ThemedText style={styles.text}>
           Phone:{"\n"}
           <Link href="tel:5555555555" style={styles.link}>
             555-555-5555
@@ -61,7 +61,7 @@ export default function TabTwoScreen() {
           <Link href="sms:5555555555" style={styles.link}>
             Click Here to Text!
           </Link>
-        </Text>
+        </ThemedText>
         <ThemedText>1600 Amphitheatre Parkway </ThemedText>
 
         <ThemedText>Mountain View,California 94043</ThemedText>
@@ -99,5 +99,10 @@ const styles = StyleSheet.create({
   titleContainer: {
     flexDirection: "row",
     gap: 8,
+  },
+  link: {
+    textDecorationLine: "underline",
+    // color: "#49BBEB",
+    color: "#0A7EA7",
   },
 });
