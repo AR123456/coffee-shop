@@ -54,10 +54,10 @@ export default function TabTwoScreen() {
         <ThemedText>1600 Amphitheatre Parkway </ThemedText>
 
         <ThemedText>Mountain View,California 94043</ThemedText>
-        <ExternalLink href="https://docs.expo.dev/router/introduction">
+        <Pressable onPress={openMaps}>
           {/* look at opening in maps https://stackoverflow.com/questions/67519145/how-to-use-open-street-map-with-react-native */}
           <ThemedText type="link">Open Map</ThemedText>
-        </ExternalLink>
+        </Pressable>
       </Collapsible>
       <Collapsible title="Menu">
         <ThemedText>We offer all kinds of coffee and pastries</ThemedText>
