@@ -49,7 +49,7 @@ export default function TabTwoScreen() {
         </ThemedText>
       </ThemedView>
       <ThemedText>We offer the best coffee west of the White river</ThemedText>
-      {/* add phone number that opens phone app  */}
+
       <Collapsible title="Address">
         <ThemedText style={styles.text}>
           Phone:{"\n"}
@@ -66,7 +66,6 @@ export default function TabTwoScreen() {
 
         <ThemedText>Mountain View,California 94043</ThemedText>
         <Pressable onPress={openMaps}>
-          {/* look at opening in maps https://stackoverflow.com/questions/67519145/how-to-use-open-street-map-with-react-native */}
           <ThemedText type="link">Open Map</ThemedText>
         </Pressable>
       </Collapsible>
