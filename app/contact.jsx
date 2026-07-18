@@ -8,9 +8,9 @@ import { ThemedView } from "@/components/themed-view";
 import { IconSymbol } from "@/components/ui/icon-symbol";
 import { Fonts } from "@/constants/theme";
 import { Link } from "expo-router";
-// trying to open google maps - need linking and platform
+// trying to open google maps - need linking and platform DYI function to do this no extra API
 const openMaps = () => {
-  const address = "123 Main St, Anytown, USA";
+  const address = "1600 Amphitheatre Parkway,Mountain View,California 94043";
   const encodedAddress = encodeURIComponent(address);
   // check platform
   const url = Platform.select({
@@ -51,6 +51,17 @@ export default function TabTwoScreen() {
       <ThemedText>We offer the best coffee west of the White river</ThemedText>
       {/* add phone number that opens phone app  */}
       <Collapsible title="Address">
+        <Text style={styles.text}>
+          Phone:{"\n"}
+          <Link href="tel:5555555555" style={styles.link}>
+            555-555-5555
+          </Link>
+          {"\n"}
+          or{" "}
+          <Link href="sms:5555555555" style={styles.link}>
+            Click Here to Text!
+          </Link>
+        </Text>
         <ThemedText>1600 Amphitheatre Parkway </ThemedText>
 
         <ThemedText>Mountain View,California 94043</ThemedText>
